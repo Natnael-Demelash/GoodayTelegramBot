@@ -1,1 +1,1 @@
-"# GoodayTelegramBot" 
+"# GoodayOn Telegram bot"
