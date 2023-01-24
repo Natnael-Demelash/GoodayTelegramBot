@@ -1,0 +1,22 @@
+{
+    "name": "goodaytelegrambot",
+    "version": "1.0.0",
+    "description": "\"# GoodayTelegramBot\"",
+    "main": "bot.js",
+    "scripts": {
+        "dev": "nodemon bot.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Natnael-Demelash/GoodayTelegramBot.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "telegraf": "^4.11.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}
