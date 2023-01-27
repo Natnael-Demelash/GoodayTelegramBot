@@ -216,8 +216,9 @@ bot.action('go_back', ctx => {
 
 
 //Register as a service provider
-bot.command("register", ctx => {
-    ctx.telegram.sendMessage(ctx.chat.id, regsiterInfo, { parse_mode: "HTML" });
+bot.command("register", async(ctx) => {
+    await ctx.telegram.sendMessage(ctx.chat.id, regsiterInfo, { parse_mode: "HTML" });
+    await bot.telegram.sendLocation(ctx.chat.id, '8.98049', '38.75505')
 })
 
 //handling employers request
@@ -228,7 +229,7 @@ bot.action(serviceRequest, ctx => {
 
     ctx.reply("ℹ️ Please tell us detailed information regarding the job and the service provider you want.\n\nስለ ስራው እንዲሁም ስለሚፈልጉት የባለሙያ አይነት ግልጽ የሆነ ማብራሪያ ይንገሩን");
 
-    bot.on('text', async(ctx) => {
+    bot.on("text", async(ctx) => {
         gigDescription = ctx.message.text;
         console.log(gigDescription);
         detailMessage = `<b><u>REQUEST DETAIL</u></b> \n\n<i><b>requtsed service</b></i>: 👉 ${requestedService} 
@@ -239,8 +240,8 @@ bot.action(serviceRequest, ctx => {
 
     });
 
-
 });
+
 
 bot.command('phone', async(ctx) => {
     console.log(ctx.from)
@@ -251,7 +252,6 @@ bot.command('phone', async(ctx) => {
         console.log(employerPhone)
     })
 })
-
 
 
 // bot.hears("location", (ctx) => {
@@ -282,6 +282,8 @@ const requestPhoneKeyboard = {
 
 };
 
+
+
 // constructor for proving location to the bot
 // const requestLocationKeyboard = {
 //     "reply_markup": {
@@ -298,7 +300,6 @@ const requestPhoneKeyboard = {
 //     }
 
 // }
-
 
 
 
