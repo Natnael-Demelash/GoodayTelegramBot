@@ -23,12 +23,8 @@ Use this commands to communicate
 `;
 
 const regsiterInfo = `
-ℹ️ If you are a service provider and want to find clients by promoting your work on goodayOn, important information you should send:\n
-አገልግሎት ሰጪ ከሆኑ እና ስራዎትን በጉዳይ ላይ በማስተዋወቅ ደንበኞችን ማግኘት የሚፈልጉ ከሆነ መላክ የሚገባዎት አስፈላጊ መረጃዎች፡\n
--------------------------------------------------------- 
- 1- Profile picture (ከትከሻ በላይ የተነሳ ፊት የሚያሳይ ፎቶ)፣\n 
- 2- ID picture (የመታወቂያ፣ መንጃ ፍቃድ፣ ፓስፖርት ፎቶ) እና \n 
- 3- Phone number (ስልክ ቁጥር)
+ℹ️ If you are a service provider and want to find clients by promoting your work on goodayOn, Please call 9675 to schedule your appointment date for registration:\n
+አገልግሎት ሰጪ ከሆኑ እና ሙያዎትን በጉዳይ ላይ በማስተዋወቅ ደንበኞችን ማግኘት የሚፈልጉ ከሆነ በአካል የጉዳይ ቢሮ በመገኘት መመዝገብ ይኖርቦታል። 9675 በመደወል ለምዝገባ የሚመጡበትን ቀን መረጃ ይቀበሉ.
 `
 
 // Initiated when the user /start
