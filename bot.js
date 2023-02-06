@@ -224,7 +224,7 @@ bot.command("register", async(ctx) => {
 //handling employers request
 let serviceRequest = ['cooking-maid', 'cleaning-maid', 'nanny', 'catering', 'chauffer', 'tutor', 'satellite-dish', 'electrician', 'plumber', 'electronics-repair', 'computer-tech', 'home-repair', 'construction', 'aluminium', 'gypsum', 'painting', 'errand', 'salesman', 'accountant'];
 bot.action(serviceRequest, ctx => {
-    requestedService = ctx.match.input.toUpperCase();
+    requestedService = ctx.match.toUpperCase();
     // console.log(requestedService);
 
     ctx.reply("ℹ️ Please tell us detailed information regarding the job and the service provider you want.\n\nስለ ስራው እንዲሁም ስለሚፈልጉት የባለሙያ አይነት ግልጽ የሆነ ማብራሪያ ይንገሩን");
